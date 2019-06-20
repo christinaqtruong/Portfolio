@@ -54,13 +54,13 @@ body {
     margin-right: 15px;
   }
 
-.About{
+.header{
   margin-left: 1.1rem;
   padding: 10px;
   margin-right: 1.1rem;
 }
 
-.aboutme{
+.paragraph{
   text-align: justify;
   margin-left: 15px;
   line-height: 1.5em;
