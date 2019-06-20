@@ -47,7 +47,22 @@ body {
   }
   
   .responsive {
-    width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
+    float: right;
+    margin-left: 15px;
+    margin-right: 15px;
   }
+
+.About{
+  margin-left: 1.1rem;
+  padding: 10px;
+  margin-right: 1.1rem;
+}
+
+.aboutme{
+  text-align: justify;
+  margin-left: 15px;
+  line-height: 1.5em;
+  margin-right: 15px;
+}
