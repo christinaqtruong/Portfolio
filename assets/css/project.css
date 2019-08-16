@@ -1,3 +1,22 @@
 .row{
     padding-top: 0 !important;
 }
+
+#project-bar {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.col-sm.slide{
+    padding: 0;
+    flex-grow: 0  ;
+}
+
+img{
+    width: 100px;
+    margin: 10px;
+}

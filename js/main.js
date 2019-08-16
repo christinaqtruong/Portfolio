@@ -1,6 +1,6 @@
 //Opens side bar navigation
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "160px";
 }
 
 //closes side bar navigation

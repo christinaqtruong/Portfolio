@@ -35,9 +35,11 @@ var projects = [
   ]
 
   //for each item in the array, add a small icon to the projects divider
-var column = "<div class='col-sm' id='project-icon'></div>";
+var column = "<div class='col-sm slide'></div>";
 
-$.each(projects, function(){
-    $("#project-bar").append($(column));
-    $("#project-icon").append($())
+$.each(projects, function(index, val){
+  var col = $(column);
+  var img = $("<img>").attr("src", val.icon);
+  col.append(img);
+  $("#project-bar").append(col);
 })
