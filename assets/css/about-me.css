@@ -1,8 +1,9 @@
+*{
+    font-family: "Lato", sans-serif;
+}
 .paragraph {
   text-align: justify;
-  margin-left: 15px;
   line-height: 1.5em;
-  margin-right: 15px;
 }
 
 .about-me {
@@ -12,19 +13,48 @@
 .responsive {
   max-width: 200px;
   height: auto;
-  float: right;
+  float: left;
   margin-right: 10px;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-bottom: 10px;
   border-radius: 8px;
 }
 
+.card {
+  margin: auto;
+  margin-bottom: 10px;
+  height: 247.16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header{
+    font-size: 1.5em;
+}
+
+.card-text{
+    margin-bottom: 5px;
+}
+
+
+.card-body{
+    padding: 5px;
+}
+
 @media screen and (max-width: 750px) {
-    .responsive {
-        display: block;
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-        margin-top: 0px;}
-    .sidenav a {font-size: 18px;}
+  .responsive {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 0px;
   }
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .card{
+      min-width: 200px;
+  }
+}
