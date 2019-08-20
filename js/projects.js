@@ -36,7 +36,30 @@ var projects = [
 
 function displayProject(){
   //display first project on page
-  selectProject(projects[0].title, projects[0].byline, projects[0].description, projects[0].link)
+  selectProject(projects[0].title, projects[0].byline, projects[0].description, projects[0].link);
+
+  //loop through projects and display their icons
+  for (var i=0; i < projects.length; i++){
+    var iconContainer = $("<div>").addClass("project-icon").attr({
+      "project-title": projects[i].title,
+      "data-key": i
+    });
+    
+    var projectIcon = $("<img>").attr("src", projects[i].icon);
+
+    iconContainer.append(projectIcon);
+
+    $(".project-list").append(iconContainer);
+  }
+
+  //switch between projects
+  $(".project-list").on("click", ".project-icon", function(){
+    for (var i=0; i < projects.length; i++){
+      if($(this).attr("project-title") === projects[i].title){
+        selectProject(projects[i].title, projects[i].byline, projects[i].description, projects[i].link)
+      }
+    }
+  })
 }
 
 function selectProject(title, byline, description, link){
