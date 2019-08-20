@@ -1,45 +1,68 @@
 //array holding project data
 var projects = [
-    {
-      title: "Project 1",
-      demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
-      description: "Project 1 Description",
-      link: "Project 1 link",
-      tags: "Project 1 tags",
-      icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
-    },
-    {
-      title: "Project 2",
-      demo: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif",
-      description: "Project 2 Description",
-      link: "Project 2 link",
-      tags: "Project 2 tags",
-      icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
-    },
-    {
-      title: "Project 3",
-      demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
-      description: "Project 3 Description",
-      link: "Project 3 link",
-      tags: "Project 3 tags",
-      icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
-    },
-    {
-      title: "Project 4",
-      demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
-      description: "Project 4 Description",
-      link: "Project 4 link",
-      tags: "Project 4 tags",
-      icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
-    },
-  ]
+  {
+    title: "Engauge",
+    byline: "A data repository resource for oil companies",
+    demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
+    description:
+      "Engauge is a data repository customized for oil companies that stores, organizes and visualizes data as infographics and specialized tables. This app enables the creation of well tables, shows detailed information on each well and has a dashboard for quick access to summary statistics on oil, gas and water production. Engauge also displays the location of well sites and draws financial data from an API to populate the price of oil production based on current oil production.",
+    link: "https://serene-meadow-56536.herokuapp.com/",
+    tags: ["React", "MongoDB", "Mongoose", "Passport", "Moment", "JavaScript"],
+    icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
+  },
+  {
+    title: "Heroes United X: The Awakening",
+    byline: "A JavaScript game",
+    demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
+    description:
+      "Heroes United is a multi-level, turn-based browser game that incorporates strategy, wit, and RPG elements. Users are prompted to login or sign up upon load, select and customize their characters, and unlock new chapters as they progress their way through the story. Characters have preset base stats according to their class, but the extra customization allows users to distribute additional stat points to any selected value.",
+    link: "https://heroesunited.herokuapp.com",
+    tags: ["Express", "Node", "MySQL", "Passport", "Sequelize", "JavaScript", "jQuery", "D3"],
+    icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
+  },
+  {
+    title: "Lazy Timer",
+    byline: "An interval training stopwatch",
+    demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
+    description:
+      "The Lazy Timer allows the user to set two timers that switch back and forth automatically, enabling them to transition between workout and rest periods during interval training without having to reset the timer.",
+    link: "https://christinaqtruong.github.io/LazyTimer/",
+    tags: ["JavaScript", "jQuery", "CSS"],
+    icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
+  }
+];
 
-  //for each item in the array, add a small icon to the projects divider
-var column = "<div class='col-sm slide'></div>";
+//for each item in the array, add a small icon to the projects divider
 
-$.each(projects, function(index, val){
-  var col = $(column);
-  var img = $("<img>").attr("src", val.icon);
-  col.append(img);
-  $("#project-bar").append(col);
+function displayProject(){
+  //display first project on page
+  selectProject(projects[0].title, projects[0].byline, projects[0].description, projects[0].link)
+}
+
+function selectProject(title, byline, description, link){
+  //clear previous selection
+  $(".title").empty();
+  $(".byline").empty();
+  $(".description").empty();
+  $(".demo-link").empty();
+
+  //display project details
+  $(".title").text(title);
+  $(".byline").text(byline);
+  $(".description").text(description);
+  $(".demo-link").text(title);
+  $(".demo-link").attr("href", link);
+}
+
+$(document).ready(function(){
+  displayProject();
 })
+
+// var column = "<div class='col-sm slide'></div>";
+
+// $.each(projects, function(index, val) {
+//   var col = $(column);
+//   var img = $("<img>").attr("src", val.icon);
+//   col.append(img);
+//   $("#project-bar").append(col);
+// });
