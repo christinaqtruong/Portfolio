@@ -1,22 +1,35 @@
-.row{
-    padding-top: 0 !important;
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.row {
+  padding-top: 0 !important;
 }
 
 #project-bar {
-    /* display: flex;
+  /* display: flex;
     flex-wrap: wrap; */
-    display: flex;
+  display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   width: 100%;
 }
 
-.col-sm.slide{
-    padding: 0;
-    flex-grow: 0  ;
+.col-sm.slide {
+  padding: 0;
+  flex-grow: 0;
 }
 
-img{
-    width: 100px;
-    margin: 10px;
+img {
+  width: 100px;
+  margin: 15px;
+}
+
+.card {
+  margin: 15px;
+}
+
+.card-header {
+  text-align: center;
+  font-size: 1.5em;
 }
