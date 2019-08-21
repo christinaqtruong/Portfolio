@@ -7,21 +7,26 @@
 }
 
 .project-list {
-  /* display: flex;
-    flex-wrap: wrap; */
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   width: 100%;
+  padding: 15px;
+  justify-content: space-between;
 }
 
 img {
   width: 100px;
-  margin: 15px;
 }
 
-.card {
-  margin: 15px;
+.title{
+  background-color: black;
+  font-weight: bold;
+  color:gray; 
+}
+
+.byline{
+  text-align: center;
 }
 
 .card-header {
