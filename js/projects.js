@@ -55,7 +55,7 @@ function displayProject(){
       "data-key": i
     });
     
-    var projectIcon = $("<img>").attr("src", projects[i].icon);
+    var projectIcon = $("<img class='icon'>").attr("src", projects[i].icon);
 
     iconContainer.append(projectIcon);
 
