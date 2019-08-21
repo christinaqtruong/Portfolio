@@ -21,22 +21,29 @@
 }
 
 .demo-gif{
-  padding-top: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .card{
   border-radius: 5px;
 }
 
+.card-body{
+  color: black !important;
+  padding: 0px;
+  
+}
+
 img {
-  width: 100px;
   border-radius: 5px;
+  max-width: 100%;
 }
 
 .title{
-  background-color: black;
+  background-color: white;
   font-weight: bold;
-  color:gray; 
+  color: black; 
 }
 
 .byline{
@@ -46,4 +53,9 @@ img {
 .card-header {
   text-align: center;
   font-size: 1.5em;
+}
+
+.demo{
+  margin-right: 0px;
+  padding: 7.5px;
 }

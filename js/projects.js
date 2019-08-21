@@ -13,7 +13,7 @@ var projects = [
   {
     title: "Heroes United X: The Awakening",
     byline: "A JavaScript game",
-    demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
+    demo: "../assets/gifs/heroes_united_demo.gif",
     description:
       "Heroes United is a multi-level, turn-based browser game that incorporates strategy, wit, and RPG elements. Users are prompted to login or sign up upon load, select and customize their characters, and unlock new chapters as they progress their way through the story. Characters have preset base stats according to their class, but the extra customization allows users to distribute additional stat points to any selected value.",
     link: "https://heroesunited.herokuapp.com",
@@ -46,7 +46,7 @@ var projects = [
 
 function displayProject(){
   //display first project on page
-  selectProject(projects[0].title, projects[0].byline, projects[0].description, projects[0].link);
+  selectProject(projects[0].title, projects[0].byline, projects[0].description, projects[0].link, projects[0].demo);
 
   //loop through projects and display their icons
   for (var i=0; i < projects.length; i++){
@@ -66,18 +66,19 @@ function displayProject(){
   $(".project-list").on("click", ".project-icon", function(){
     for (var i=0; i < projects.length; i++){
       if($(this).attr("project-title") === projects[i].title){
-        selectProject(projects[i].title, projects[i].byline, projects[i].description, projects[i].link)
+        selectProject(projects[i].title, projects[i].byline, projects[i].description, projects[i].link, projects[i].demo)
       }
     }
   })
 }
 
-function selectProject(title, byline, description, link){
+function selectProject(title, byline, description, link, demo){
   //clear previous selection
   $(".title").empty();
   $(".byline").empty();
   $(".description").empty();
   $(".demo-link").empty();
+  $(".demo-gif").empty();
 
   //display project details
   $(".title").text(title);
@@ -85,6 +86,7 @@ function selectProject(title, byline, description, link){
   $(".description").text(description);
   $(".demo-link").text(title);
   $(".demo-link").attr("href", link);
+  $(".demo-gif").attr("src", demo);
 }
 
 $(document).ready(function(){
