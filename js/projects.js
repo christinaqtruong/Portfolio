@@ -29,6 +29,16 @@ var projects = [
     link: "https://christinaqtruong.github.io/LazyTimer/",
     tags: ["JavaScript", "jQuery", "CSS"],
     icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
+  },
+  {
+    title: "Clicky Clicky 1000 Times Clicky",
+    byline: "A Rick & Morty Style Clicky Game",
+    demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
+    description:
+      "This is everybody's favorite memory game, created using React and component states. It's Clicky Clicky 1000 Times Clicky! A game nobody should play but everyone should code at least once when getting introduced to React.js.",
+    link: "https://christinaqtruong.github.io/RickandMortyClickyGame/",
+    tags: ["JavaScript", "React", "CSS", "HTML"],
+    icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
   }
 ];
 
