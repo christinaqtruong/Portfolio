@@ -20,26 +20,26 @@ var projects = [
     tags: ["Express", "Node", "MySQL", "Passport", "Sequelize", "JavaScript", "jQuery", "D3"],
     icon: "../assets/images/Heroes_United.png"
   },
-  {
-    title: "Lazy Timer",
-    byline: "An interval training stopwatch",
-    demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
-    description:
-      "The Lazy Timer allows the user to set two timers that switch back and forth automatically, enabling them to transition between workout and rest periods during interval training without having to reset the timer.",
-    link: "https://christinaqtruong.github.io/LazyTimer/",
-    tags: ["JavaScript", "jQuery", "CSS"],
-    icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
-  },
-  {
-    title: "Clicky Clicky 1000 Times Clicky",
-    byline: "A Rick & Morty Style Clicky Game",
-    demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
-    description:
-      "This is everybody's favorite memory game, created using React and component states. It's Clicky Clicky 1000 Times Clicky! A game nobody should play but everyone should code at least once when getting introduced to React.js.",
-    link: "https://christinaqtruong.github.io/RickandMortyClickyGame/",
-    tags: ["JavaScript", "React", "CSS", "HTML"],
-    icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
-  }
+  // {
+  //   title: "Lazy Timer",
+  //   byline: "An interval training stopwatch",
+  //   demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
+  //   description:
+  //     "The Lazy Timer allows the user to set two timers that switch back and forth automatically, enabling them to transition between workout and rest periods during interval training without having to reset the timer.",
+  //   link: "https://christinaqtruong.github.io/LazyTimer/",
+  //   tags: ["JavaScript", "jQuery", "CSS"],
+  //   icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
+  // },
+  // {
+  //   title: "Clicky Clicky 1000 Times Clicky",
+  //   byline: "A Rick & Morty Style Clicky Game",
+  //   demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
+  //   description:
+  //     "This is everybody's favorite memory game, created using React and component states. It's Clicky Clicky 1000 Times Clicky! A game nobody should play but everyone should code at least once when getting introduced to React.js.",
+  //   link: "https://christinaqtruong.github.io/RickandMortyClickyGame/",
+  //   tags: ["JavaScript", "React", "CSS", "HTML"],
+  //   icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
+  // }
 ];
 
 //for each item in the array, add a small icon to the projects divider

@@ -73,6 +73,11 @@ img {
 
 .icon{
   padding: 5px;
+  max-width: 250px;
+}
+
+.icon:hover { 
+  transform: scale(1.05); 
 }
 
 @media screen and (max-width: 750px) {
