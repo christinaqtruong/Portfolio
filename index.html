@@ -5,17 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Christina Truong's Portfolio</title>
+    <title>christinaqtruong</title>
 
-    <!-- Bootstrap CSS-->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Pure CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/nav-style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/project.css">
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -28,9 +27,8 @@
     <!-- Moment.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 
-    
-	<!--Favicon-->
-	<link rel="shortcut icon" href="images/favicon.png"/>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" />
 
 </head>
 
@@ -39,41 +37,68 @@
     <!-- Side navigation bar -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="./index.html">Main</a>        
-        <a href="./about.html">About</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./assets/truong_christina_resume.pdf" target="_blank">Resume</a>
-
+        
+        <a href="./index.html">Work</a>
+        
+        <a href="./truong_christina_resume.pdf" target="_blank">Resume</a>
     </div>
-    <span class="navlines" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
 
-    <!-- About me page -->
+    <!-- Projects page -->
     <main>
-        <div class="container" style="height:1500px;">
+        <div class="container">
             <div class="row pt-5">
                 <div class="col text-center">
-                    <h2 class="project-title">Welcome</h2>
+                    <h2 class="project-title">Work</h2>
                     <!-- <h5>When you scroll down it will disappear</h5> -->
                 </div>
             </div>
         </div>
     </main>
+    <div class="container-fluid wrapper">
+        
+            <div class="select-screen">
+                <!-- Corresponding video of app-->
+                <div class="demo">
+                    <img class="card-body demo-gif img-fluid"></img>
+                </div>
+
+                <!-- Corresponding card of information -->
+                <div class="details">
+                    <div class="card border-secondary mb-9">
+                        <div class="card-header title"></div>
+                        <div class="card-body text-secondary">
+                            <p class="card-text description"></p>
+                            <p class="card-text dev-process"></p>
+                            <p class="card-text tags"></p>
+                            <p><a class="demo-link" target="_blank"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+
+        <!-- bar of images that get larger on hover and display matching carousel infographic. when you click on it, it populates the details and video divider -->
+        <div class="project-list"></div>
+    </div>
+    
 
 
     <!-- JavaScript -->
     <script src="../js/main.js"></script>
+    <script src="../js/projects.js"></script>
 
 </body>
 
 <footer>
     <div class="section-container">
         <div class="social-media-bar">
-            <a href="mailto:love35minh@gmail.com"><i class="fa fa-envelope"></i></a> 
+            <a href="mailto:love35minh@gmail.com"><i class="fa fa-envelope"></i></a>
             <a href="https://github.com/christinaqtruong"><i class="fa fa-github"></i></a>
             <a href="https://www.linkedin.com/in/christinaqtruong"><i class="fa fa-linkedin"></i></a>
         </div>
     </div>
-<footer>
-<!--End Social Icons-->	
+    <footer>
+        <!--End Social Icons-->
 
 </html>
