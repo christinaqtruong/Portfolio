@@ -61,14 +61,14 @@ img {
   padding: 0px;
   margin-right:5px;
   width: 50%;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
 }
 
 .details{
   width: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .icon{
