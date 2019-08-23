@@ -174,7 +174,7 @@ function selectProject(title, description, link, demo) {
   $(".demo-link").empty();
   $(".demo-gif").empty();
   $(".tags").empty();
-
+  $(".dev-process").empty();
   //display project details
   $(".title").text(title);
   $(".description").text(description);

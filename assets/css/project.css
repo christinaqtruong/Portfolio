@@ -80,6 +80,10 @@ img {
   transform: scale(1.05); 
 }
 
+.tags{
+  display: flex;
+}
+
 @media screen and (max-width: 750px) {
   .select-screen{
     flex-direction: column;
