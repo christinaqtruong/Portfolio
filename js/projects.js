@@ -79,7 +79,6 @@ function displayProject() {
   //display first project on page
   selectProject(
     projects[0].title,
-    projects[0].dev,
     projects[0].description,
     projects[0].link,
     projects[0].demo
