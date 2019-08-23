@@ -17,7 +17,7 @@ var projects = [
     ],
     demo: "../assets/gifs/engauge_demo.gif",
     description:
-      "Engauge is a data repository customized for oil companies that stores, organizes and visualizes data as infographics and specialized tables. This app enables the creation of well tables, shows detailed information on each well and has a dashboard for quick access to summary statistics on oil, gas and water production. Engauge also displays the location of well sites and draws financial data from an API to populate the price of oil production based on current oil production.",
+      "Collaborative project that organizes data users input through forms into a mongoose database and accesses the information to dynamically create charts, maps and financial data using an API. Personally utilized MongoDB and get/post routes to dynamically create tables based on data retrieved from the database and built search functions.",
     link: "https://serene-meadow-56536.herokuapp.com/",
     tags: ["React", "MongoDB", "Mongoose", "Passport", "Moment", "JavaScript"],
     icon: "../assets/images/Engauge.png"
@@ -37,7 +37,7 @@ var projects = [
     ],
     demo: "../assets/gifs/heroes_united_demo.gif",
     description:
-      "Heroes United is a multi-level, turn-based browser game that incorporates strategy, wit, and RPG elements. Users are prompted to login or sign up upon load, select and customize their characters, and unlock new chapters as they progress their way through the story. Characters have preset base stats according to their class, but the extra customization allows users to distribute additional stat points to any selected value.",
+      "Collaborative multi-level, turn-based browser game that incorporates strategy and RPG elements. Utilizes user authentication to create and save characters, jQuery for gameplay and MySQL to store character statistics and game progress. Created the game engine and combat system.",
     link: "https://heroesunited.herokuapp.com",
     tags: [
       "Express",
