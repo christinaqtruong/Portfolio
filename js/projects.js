@@ -88,9 +88,9 @@ function displayProject() {
   for (var j = 0; j < projects[0].tags.length; j++) {
     var tagContainer = $("<div>")
       .addClass("project-tag")
-      .attr("project-title", projects[i].title);
+      .attr("project-title", projects[0].title);
 
-    var tagDiv = $("<div class='project-tag'>").text(project[i].tags[j]);
+    var tagDiv = $("<div class='project-tag'>").text(projects[0].tags[j]);
 
     $(tagContainer).append(tagDiv);
 
@@ -100,9 +100,9 @@ function displayProject() {
   for (var k = 0; k < projects[0].dev.length; k++) {
     var devContainer = $("<ul>")
       .addClass("project-dev")
-      .attr("project-title", projects[i].title);
+      .attr("project-title", projects[0].title);
 
-    var devDiv = $("<li class='project-dev'>").text(project[i].dev[k]);
+    var devDiv = $("<li class='project-dev'>").text(projects[0].dev[k]);
 
     $(devContainer).append(devDiv);
 
@@ -142,7 +142,7 @@ function displayProject() {
             .addClass("project-tag")
             .attr("project-title", projects[i].title);
 
-          var tagDiv = $("<div class='project-tag'>").text(project[i].tags[j]);
+          var tagDiv = $("<div class='project-tag'>").text(projects[i].tags[j]);
 
           $(tagContainer).append(tagDiv);
 
@@ -155,7 +155,7 @@ function displayProject() {
             .addClass("project-dev")
             .attr("project-title", projects[i].title);
 
-          var devDiv = $("<li class='project-dev'>").text(project[i].dev[k]);
+          var devDiv = $("<li class='project-dev'>").text(projects[i].dev[k]);
 
           $(devContainer).append(devDiv);
 
@@ -166,7 +166,7 @@ function displayProject() {
   });
 }
 
-function selectProject(title, dev, description, link, demo) {
+function selectProject(title, description, link, demo) {
   //clear previous selection
   $(".title").empty();
   $(".dev").empty();
