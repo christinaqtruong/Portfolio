@@ -50,17 +50,17 @@ var projects = [
       "D3"
     ],
     icon: "../assets/images/Heroes_United.png"
-  }
-  // {
-  //   title: "Lazy Timer",
-  //   dev: "An interval training stopwatch",
-  //   demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
-  //   description:
-  //     "The Lazy Timer allows the user to set two timers that switch back and forth automatically, enabling them to transition between workout and rest periods during interval training without having to reset the timer.",
-  //   link: "https://christinaqtruong.github.io/LazyTimer/",
-  //   tags: ["JavaScript", "jQuery", "CSS"],
-  //   icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
-  // },
+  },
+  {
+    title: "Lazy Timer",
+    dev: "",
+    demo: "../assets/gifs/lazy_timer_demo.gif",
+    description:
+      "An interval training stopwatch that allows the user to set two timers that switch back and forth automatically, enabling them to transition between workout and rest periods during interval training without having to reset the timer.",
+    link: "https://christinaqtruong.github.io/LazyTimer/",
+    tags: ["JavaScript", "jQuery", "CSS"],
+    icon: "../assets/images/Lazy_Timer.png"
+  },
   // {
   //   title: "Clicky Clicky 1000 Times Clicky",
   //   dev: "A Rick & Morty Style Clicky Game",
