@@ -26,7 +26,7 @@
 .tag{
   background-color: lightgray;
   border-radius: 10px;
-  margin: 2px;
+  margin: 6px;
   padding: 2px;
 }
 
@@ -71,5 +71,9 @@
 
   .card{
       min-width: 200px;
+  }
+
+  .tags{
+    margin: 2px;
   }
 }
