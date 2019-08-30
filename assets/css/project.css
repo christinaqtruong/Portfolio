@@ -23,9 +23,7 @@
 }
 
 .demo-gif{
-  padding: 0px;
-  margin: 10px;
-  margin-bottom: 0px;
+  overflow: hidden;
 }
 
 .card{
@@ -57,14 +55,6 @@ img {
 .card-header {
   text-align: center;
   font-size: 1.5em;
-}
-
-.demo{
-  width: 100%;
-  margin-right: 0px;
-  margin-bottom: 15px;
-  align-items: flex-start;
-  display: flex;
 }
 
 .details{
