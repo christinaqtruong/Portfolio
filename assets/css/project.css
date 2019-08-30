@@ -26,6 +26,11 @@
   overflow: hidden;
 }
 
+.demo{
+  display: flex;
+  justify-content: center;
+}
+
 .card{
   border-radius: 5px;
 }
