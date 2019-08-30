@@ -111,7 +111,7 @@ function displayProject() {
   //loop through projects and display their icons
   for (var i = 0; i < projects.length; i++) {
     var iconContainer = $("<div>")
-      .addClass("project-icon")
+      .addClass("project-icon col")
       .attr({
         "project-title": projects[i].title,
         "data-key": i
