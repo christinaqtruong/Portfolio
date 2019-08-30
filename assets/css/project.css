@@ -22,13 +22,10 @@
 
 }
 
-.link{
-  text-align: center;
-}
-
 .demo-gif{
   padding: 0px;
   margin: 10px;
+  margin-bottom: 0px;
 }
 
 .card{
@@ -94,6 +91,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .project-tag{

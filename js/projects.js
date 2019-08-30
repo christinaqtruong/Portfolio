@@ -3,23 +3,18 @@ var projects = [
   {
     title: "Engauge",
     dev: [
-      "Must have real life application and utility",
-      "Must use React.js",
-      "Must be backed by a MySQL or MongoDB Database with Sequelize or Mongoose ORM",
-      "Must be deployed using Heroku (with Data)",
-      "Must have both GET and POST routes",
-      "Must have a polished frontend / UI",
-      "Must utilize at least two libraries, packages or technologies",
-      "Must allow for or involve the authentication of users",
-      "Must have folder structure that meets MVC Paradigm",
-      "Must meet good quality coding standards (indentation, scoping, naming)",
-      "Must not expose sensitive API key information on the server"
+      "User logs in to access app information via user authentication",
+      "User lands on a dashboard containing charts and graphs populated using Nivo that summarizes user data",
+      "Pages are populated using React.js, with specific information dynamically populated using states",
+      "Data is pushed into/pulled from MongoDB using both GET and POST routes and Mongoose ORM",
     ],
     demo: "../assets/gifs/engauge_demo.gif",
+    background:
+      "This project was a collaborative effort with teammates <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. David wanted to create an app that would have helped him in his former role as a geologist recording oil well data in the field. Under his direction, we created Enguage, which is targeted at small oil companies for tracking data.",
     description:
-      "Collaborative project that organizes data users input through forms into a mongoose database and accesses the information to dynamically create charts, maps and financial data using an API. Personally utilized MongoDB and get/post routes to dynamically create tables based on data retrieved from the database and built search functions.",
+      "Engauge organizes data users input through forms into a mongoose database and accesses the information to dynamically create charts, maps and financial data using an API. My role involved utilizing get/post routes to dynamically create populate data in tables retrieved from a Mongo database, creating table components using React.js and building search/filter functions for better user experience and organization.",
     link: "https://serene-meadow-56536.herokuapp.com/",
-    tags: ["React", "MongoDB", "Mongoose", "Passport", "Moment", "JavaScript"],
+    tags: ["React", "MongoDB", "Mongoose", "Passport", "Moment", "JavaScript", "Nivo", "Google Map React"],
     icon: "../assets/images/Engauge.png"
   },
   {
@@ -81,7 +76,8 @@ function displayProject() {
     projects[0].title,
     projects[0].description,
     projects[0].link,
-    projects[0].demo
+    projects[0].demo,
+    projects[0].background
   );
 
   for (var j = 0; j < projects[0].tags.length; j++) {
@@ -133,7 +129,8 @@ function displayProject() {
           projects[i].title,
           projects[i].description,
           projects[i].link,
-          projects[i].demo
+          projects[i].demo,
+          projects[i].background
         );
 
         //append tags based on project selected
@@ -166,7 +163,7 @@ function displayProject() {
   });
 }
 
-function selectProject(title, description, link, demo) {
+function selectProject(title, description, link, demo, background) {
   //clear previous selection
   $(".title").empty();
   $(".dev").empty();
@@ -175,12 +172,15 @@ function selectProject(title, description, link, demo) {
   $(".demo-gif").empty();
   $(".tags").empty();
   $(".dev-process").empty();
+  $(".background").empty();
+
   //display project details
   $(".title").text(title);
   $(".description").text(description);
   $(".demo-link").text(title);
   $(".demo-link").attr("href", link);
   $(".demo-gif").attr("src", demo);
+  $(".background").html(background);
 }
 
 $(document).ready(function() {
