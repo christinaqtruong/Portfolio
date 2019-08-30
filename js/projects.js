@@ -63,7 +63,7 @@ var projects = [
       ],
     demo: "../assets/gifs/lazy_timer_demo.gif",
     background:
-      "I prefer creating apps that have real-life application, so when the time came to create my first app, I decided to look to my past experiences to see what would've helped me. When I moved back to Austin and started my first night shift job at a hospital, it completely messed up my daily routine, affecting my sleeping and active hours. I picked up interval training and calisthenics as a way to relieve stress and keep busy during my downtime. The need for two timers for my interval training inspired me to create this app.",
+      "I prefer creating apps that have real-life application, so when the time came to create my first app using simple JavaScipt and Firebase, I decided to look to my past experiences to see what would've helped me. When I moved back to Austin and started my first night shift job at a hospital, it completely messed up my daily routine, affecting my sleeping and active hours. I picked up interval training and calisthenics as a way to relieve stress and keep busy during my downtime. The need for two timers for my interval training inspired me to create this app.",
     description:
       "Lazy Timer is an interval training stopwatch that allows the user to set two timers that switch back and forth automatically, enabling them to transition between workout and rest periods during interval training without having to reset the timer.",
     link: "https://christinaqtruong.github.io/LazyTimer/",
