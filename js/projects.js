@@ -53,9 +53,11 @@ var projects = [
   {
     title: "Lazy Timer",
     dev: 
-      ["An input form is dynmically populated upon clicking the timer display",
+      ["An input form is dynamically populated upon clicking the timer display",
       "Upon submit, the data is pushed to Firebase and reflected real time",
-      "The values are checked for certain parameters and converted a common unit using regex for entries separated by semicolons",
+      "A snapshot of the values are used to fill in the display by default when a user does not enter a value",
+      "User submission is checked for parameters (use of letters, semicolons) using regex and a warning is displayed if the requirements are not met",
+      "User submission is converted into a common unit (s) using calculations performed by JavaScript",
       "The values are converted back to time format for display using Moment.js",
       "setInterval() is used for the timers, with Booleans set to determine which timer is running at any given time"
       ],
