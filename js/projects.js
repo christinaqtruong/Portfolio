@@ -1,24 +1,6 @@
 //array holding project data
 var projects = [
   {
-    title: "Engauge",
-    dev: [
-      "User logs in to access app information via Passport.js",
-      "User lands on a dashboard containing charts and graphs populated using Nivo that summarizes user data",
-      "Pages are populated using React.js, with specific information dynamically populated using states",
-      "Data is pushed into/pulled from MongoDB using both GET and POST routes and Mongoose ORM",
-    ],
-    demo: "../assets/gifs/engauge_demo.gif",
-    background:
-      "This project was a collaborative effort with teammates <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. David wanted to create an app that would have helped him in his former role as a geologist recording oil well data in the field. Under his direction, we created Enguage, which is targeted at small oil companies for tracking data.",
-    description:
-      "Engauge organizes data users input through forms into a mongoose database and accesses the information to dynamically create charts, maps and financial data using an API. My role involved utilizing get/post routes to dynamically populate data in tables, creating table components using React.js and building search/filter functions for better user experience and organization.",
-    link: "https://serene-meadow-56536.herokuapp.com/",
-    tags: ["React", "MongoDB", "Mongoose", "Passport", "Moment", "JavaScript", "Nivo", "Google Map React"],
-    icon: "../assets/images/Engauge.png",
-    github: "https://github.com/Dgarza0413/engauge"
-  },
-  {
     title: "Heroes United X: The Awakening",
     dev: [
       "User must create a username and password stored in a MySQL Database to log in and create a character",
@@ -33,7 +15,7 @@ var projects = [
     ],
     demo: "../assets/gifs/heroes_united_demo.gif",
     background:
-      "This was the first collaborative effort with my amazing teammates <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. We all thought it would be cool to create a game with a combat system for our first big project incorporating backend data storage and came up with Heroes.",
+      "This was the first collaborative effort with some amazing teammates from my bootcamp, <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. We all thought it would be cool to create a game with a combat system for our first big project incorporating backend data storage and came up with Heroes. Some of us had played Fire Emblem and took inspiration from RPG games to come up with this game that was meant to enable the player to customize their character to some degree and also save their game progression.",
     description:
       "Heroes is a collaborative multi-level, turn-based browser game that incorporates strategy and RPG elements. User authentication is used to access saved character statistics/game progression, jQuery for gameplay and a MySQL database for data storage. My role involved designing the game play, coding the combat system, and working with the front-end developers to tie in the game mechanics with the UI.",
     link: "https://heroesunited.herokuapp.com",
@@ -49,6 +31,24 @@ var projects = [
     ],
     icon: "../assets/images/Heroes_United.png",
     github: "https://github.com/elaintran/heroes-united"
+  },
+  {
+    title: "Engauge",
+    dev: [
+      "User logs in to access app information via Passport.js",
+      "User lands on a dashboard containing charts and graphs populated using Nivo that summarizes user data",
+      "Pages are populated using React.js, with specific information dynamically populated using states",
+      "Data is pushed into/pulled from MongoDB using both GET and POST routes and Mongoose ORM",
+    ],
+    demo: "../assets/gifs/engauge_demo.gif",
+    background:
+      "This project was another collaborative effort (we heroes reunited) and my second group project with <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. Our target was to create an app with real-life application, with the core concept being an app that would have helped David in his former role as a geologist recording oil well data in the field. With his field knowledge, we created Enguage, which is targeted at small oil companies for tracking data.",
+    description:
+      "Engauge organizes data users input through forms into a mongoose database and accesses the information to dynamically create charts, maps and financial data using an API. My role involved utilizing get/post routes to dynamically populate data in tables, creating table components using React.js and building search/filter functions for better user experience and organization.",
+    link: "https://serene-meadow-56536.herokuapp.com/",
+    tags: ["React", "MongoDB", "Mongoose", "Passport", "Moment", "JavaScript", "Nivo", "Google Map React"],
+    icon: "../assets/images/Engauge.png",
+    github: "https://github.com/Dgarza0413/engauge"
   },
   {
     title: "Lazy Timer",

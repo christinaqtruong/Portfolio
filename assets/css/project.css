@@ -100,6 +100,25 @@ img {
   transform: scale(1.1);
 }
 
+.icon-wrapper{
+  position: relative;
+}
+
+.icon-description{
+  position: absolute;
+  background: lightslategray;
+  color: black;
+  visibility: hidden !important;
+  opacity: 0;
+
+  transition: opacity 0.2s, visibility .2s;
+}
+
+.icon-wrapper:hover, .icon-description{
+  visibility: visible;
+  opacity: 1;
+}
+
 @media screen and (max-width: 750px) {
 .project-tag{
   margin: 2px;
