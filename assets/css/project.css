@@ -96,6 +96,10 @@ img {
   margin: 6px;
 }
 
+.icon:hover{
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 750px) {
 .project-tag{
   margin: 2px;
