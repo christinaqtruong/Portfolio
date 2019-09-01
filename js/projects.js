@@ -44,7 +44,7 @@ var projects = [
     background:
       "This project was another collaborative effort (we heroes reunited) and my second group project with <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. Our target was to create an app with real-life application, with the core concept being an app that would have helped David in his former role as a geologist recording oil well data in the field. With his field knowledge, we created Enguage, which is targeted at small oil companies for tracking data.",
     description:
-      "Engauge organizes data users input through forms into a Mongo database and accesses the information to dynamically create charts, maps and financial data with live data from a financial API. My role in the project involved utilizing get/post routes to dynamically populate data in tables, creating components suing React.js and building search/filter functions for better user experience and data organization.",
+      "Engauge organizes data users input through forms into a Mongo database and accesses the information to dynamically create charts, maps and financial data with live data from a financial API. My role in the project involved utilizing get/post routes to dynamically populate data in tables, creating components using React.js and building search/filter functions for a better user experience and data organization.",
     link: "https://serene-meadow-56536.herokuapp.com/",
     tags: ["React", "MongoDB", "Mongoose", "Passport", "Moment", "JavaScript", "Nivo", "Google Map React"],
     icon: "../assets/images/Engauge.png",
