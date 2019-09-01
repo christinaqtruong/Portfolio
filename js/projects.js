@@ -63,7 +63,7 @@ var projects = [
       ],
     demo: "../assets/gifs/lazy_timer_demo.gif",
     background:
-      "This was one of my first from-scratch projects back when I first learned JavaScript and jQuery. The inspiration for this app came from my first night shift job at the hospital. I picked up interval training and calithenics as a way to relieve stress and keep busy during my odd schedule. Having to reset the timer between sets inspired me to create this app.",
+      "This was one of my first from-scratch projects back when I first learned JavaScript and jQuery. The inspiration for this app came from my first night shift job at the hospital. I picked up interval training and calisthenics as a way to relieve stress and keep busy during my odd schedule. Having to reset the timer between sets inspired me to create this app.",
     description:
       "Lazy Timer is an interval training stopwatch that allows the user to set two timers that switch back and forth automatically, enabling them to transition between workout and rest periods during interval training without having to reset the timer.",
     link: "https://christinaqtruong.github.io/LazyTimer/",
