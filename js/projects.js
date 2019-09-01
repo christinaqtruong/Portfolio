@@ -44,7 +44,7 @@ var projects = [
     background:
       "This project was another collaborative effort (we heroes reunited) and my second group project with <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. Our target was to create an app with real-life application, with the core concept being an app that would have helped David in his former role as a geologist recording oil well data in the field. With his field knowledge, we created Enguage, which is targeted at small oil companies for tracking data.",
     description:
-      "Engauge organizes data users input through forms into a mongoose database and accesses the information to dynamically create charts, maps and financial data using an API. My role involved utilizing get/post routes to dynamically populate data in tables, creating table components using React.js and building search/filter functions for better user experience and organization.",
+      "Engauge organizes data users input through forms into a Mongo database and accesses the information to dynamically create charts, maps and financial data with live data from a financial API. My role in the project involved utilizing get/post routes to dynamically populate data in tables, creating components suing React.js and building search/filter functions for better user experience and data organization.",
     link: "https://serene-meadow-56536.herokuapp.com/",
     tags: ["React", "MongoDB", "Mongoose", "Passport", "Moment", "JavaScript", "Nivo", "Google Map React"],
     icon: "../assets/images/Engauge.png",
@@ -63,7 +63,7 @@ var projects = [
       ],
     demo: "../assets/gifs/lazy_timer_demo.gif",
     background:
-      "I prefer creating apps that have real-life application, so when the time came to create my first app using simple JavaScipt and Firebase, I decided to look to my past experiences to see what would've helped me. When I moved back to Austin and started my first night shift job at a hospital, it completely messed up my daily routine, affecting my sleeping and active hours. I picked up interval training and calisthenics as a way to relieve stress and keep busy during my downtime. The need for two timers for my interval training inspired me to create this app.",
+      "This was one of my first from-scratch projects back when I first learned JavaScript and jQuery. The inspiration for this app came from my first night shift job at the hospital. I picked up interval training and calithenics as a way to relieve stress and keep busy during my odd schedule. Having to reset the timer between sets inspired me to create this app.",
     description:
       "Lazy Timer is an interval training stopwatch that allows the user to set two timers that switch back and forth automatically, enabling them to transition between workout and rest periods during interval training without having to reset the timer.",
     link: "https://christinaqtruong.github.io/LazyTimer/",
