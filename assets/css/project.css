@@ -138,4 +138,8 @@ img {
   margin-bottom:20px;
   border: solid 1px black;
 }
+
+.name{
+  margin-bottom: 0px;
+}
 }
