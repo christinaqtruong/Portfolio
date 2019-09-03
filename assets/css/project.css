@@ -13,13 +13,17 @@
   padding-top: 0 !important;
 }
 
+.name{
+  margin-top: 20px;
+}
+
 .project-list {
   display: flex;
   flex-wrap: row wrap;
   align-content: center;
   justify-content: center;
-  margin: 50px 15px;
-
+  margin: 15px 15px;
+  margin-bottom: 25px;
 }
 
 .demo-gif{
@@ -51,6 +55,7 @@ img {
   font-size: 28px;
   font-family: sans-serif;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .byline{
@@ -97,7 +102,7 @@ img {
 }
 
 .icon:hover{
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 .icon-wrapper{
@@ -131,5 +136,6 @@ img {
 
 .icon{
   margin-bottom:20px;
+  border: solid 1px black;
 }
 }

@@ -33,6 +33,13 @@
 .profile-pic{
   display: flex;
   justify-content: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px !important;
+}
+
+.tag-box{
+  padding: 0px !important;
+  margin: 0px;
 }
 
 .card {
@@ -54,6 +61,10 @@
 
 .card-body{
     padding: 5px;
+}
+
+.about-me{
+  display: block;
 }
 
 @media screen and (max-width: 750px) {
