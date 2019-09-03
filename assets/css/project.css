@@ -123,4 +123,13 @@ img {
 .project-tag{
   margin: 2px;
 }
+
+.project-list{
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.icon{
+  margin-bottom:20px;
+}
 }
