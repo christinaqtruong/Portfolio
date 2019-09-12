@@ -71,16 +71,28 @@ var projects = [
     icon: "../assets/images/Lazy_Timer.png",
     github: "https://github.com/christinaqtruong/LazyTimer"
   },
-  // {
-  //   title: "Clicky Clicky 1000 Times Clicky",
-  //   dev: "A Rick & Morty Style Clicky Game",
-  //   demo: "https://media.giphy.com/media/mP94uHyKvY1nq/giphy.gif",
-  //   description:
-  //     "This is everybody's favorite memory game, created using React and component states. It's Clicky Clicky 1000 Times Clicky! A game nobody should play but everyone should code at least once when getting introduced to React.js.",
-  //   link: "https://christinaqtruong.github.io/RickandMortyClickyGame/",
-  //   tags: ["JavaScript", "React", "CSS", "HTML"],
-  //   icon: "https://media.giphy.com/media/mP94uHyKvY2nq/giphy.gif"
-  // }
+  {
+    title: "Rick & Morty Themed Clicky Game",
+    dev: 
+      [
+      "A state object holds the array of image cards, score, top score, shaking feature and clicked images in an array",
+      "A react component renders images on the page by mapping through the array of image cards using .map()",
+      "Clicking an image randomizes the order of the array of image cards using JavaScript and sets it as the new array of images using setState()",
+      "Each time an image is clicked, if its id is not already in the clicked array, then it gets added to the clicked array",
+      "On click, the id of the image is compared to the clicked array and the score state changed",
+      "If the image id is not in the clicked array, the score is incremented, setState() updates the score state and the new score is rendered to the page",
+      "If the image id exists in the clicked array, the wrapper state changes and triggers a shaking function and the score resets"
+      ],
+    demo: "../assets/gifs/clicky_game_demo.gif",
+    background:
+      "Every developer creates their version of the classic clicky game when introduced to React.js. I modified the original concept by adding in a shaking feature whenever the user clicks the same image.",
+    description:
+      "Clicky Clicky 3000 is a memory game rendered using React components and state. Each time an image is clicked, states are updated to reflect whether or not the image has been clicked before.",
+    link: "https://christinaqtruong.github.io/RickandMortyClickyGame/",
+    tags: ["React.js", "JavaScript", "CSS"],
+    icon: "../assets/images/Clicky_Game.png",
+    github: "https://github.com/christinaqtruong/RickandMortyClickyGame"
+  }
 ];
 
 //for each item in the array, add a small icon to the projects divider
