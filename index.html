@@ -36,18 +36,20 @@
 <body>
 
     <!-- Side navigation bar -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="http://www.github.com/christinaqtruong" target="_blank">Github</a>
-        <a href="./resume/truong_q_christina_resume.pdf" target="_blank">Resume</a>
-    </div>
-    <span class="navbar row" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+    <!-- <div id="mySidenav" class="sidenav"> -->
+    <nav class="navbar-container navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <a class="navbar-link" href="#about">About</a>
+        <a class="navbar-link" href="#work">Projects</a>
+        <a class="navbar-link" href="http://www.github.com/christinaqtruong" target="_blank">Github</a>
+        <a class="navbar-link" href="./resume/truong_q_christina_resume.pdf" target="_blank">Resume</a>
+    </nav>
+    <!-- </div> -->
+    <!-- <span class="navbar row" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span> -->
 
     <!-- About me page -->
 
-    <a id="about"></a>
+    <a class="nav-link" id="about"></a>
     <div class="container">
         <div class="row pt-5">
             <div class="col text-center">
@@ -76,22 +78,24 @@
                         </div>
                     </p>
 
-                    <p class="paragraph col-lg-12 col-md-12 card-body" style="width: 100%; overflow: hidden;">I
+                    <!-- <p class="paragraph col-lg-12 col-md-12 card-body" style="width: 100%; overflow: hidden;">I
                         studied at the University of Texas where I double majored in Microbiology and in Medical
                         Laboratory Science. After my undergraduate, I completed my 16-month clinical program in the
                         DFW area, where I got my first job as a ASCP-certified MLS at Parkland Memorial Hospital.
                         After working in the Chemistry department for about a year, I moved to Austin and began
                         working nights as a generalist for Baylor Scott & White Medical Center in Pflugerville. As a
                         generalist I ran the laboratory alone at night, covering the chemistry, blood bank,
-                        urinalysis, immunology, body fluids, and hematology departments working 76-hour weeks.</p>
+                        urinalysis, immunology, body fluids, and hematology departments working 76-hour weeks.</p> -->
 
-                    <p class="paragraph col-lg-12 col-md-12 card-body" style="width: 100%; overflow: hidden;">I
+                    <!-- <p class="paragraph col-lg-12 col-md-12 card-body" style="width: 100%; overflow: hidden;">I
                         enjoy working on independent projects that I feel can make an impact on my life or the life
                         of others. I love finding ways to improve myself and the things I do and try to create a
                         little value in each day. I recently completed the Web Development Coding Bootcamp at the
                         University of Texas at Austin to help me transition into a new career. For fun lately I've
                         been working on pokemon art, bouldering with friends, watching Mindhunters on Netflix, and
-                        practicing my kitchen skills.</p>
+                        practicing my kitchen skills.</p> -->
+
+                        <p class="col-lg-12 col-md-12 card-body" style="width: 100%; overflow: hidden;">Junior web developer certified through the University of Texas’ coding program, passionate about developing responsive web applications that make life easier with skills in JavaScript, React and Bootstrap. Strengths in communication and creativity. </p> 
 
                 </div>
 
@@ -99,7 +103,7 @@
         </div>
     </div>
 
-    <a id="work"></a>
+    <a class="nav-link" id="work"></a>
     <!-- Projects page -->
 
   
@@ -117,7 +121,7 @@
         <div class="col project-list"></div>
     </div>
 
-    <a id="project-section"></a>
+    <a class="nav-link" id="project-section"></a>
 
     <div class="container wrapper project-wrapper">
 
