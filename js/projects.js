@@ -38,7 +38,7 @@ var projects = [
       "User logs in to access app information via Passport.js",
       "User lands on a dashboard containing charts and graphs populated using Nivo that summarizes user data",
       "Pages are populated using React.js, with specific information dynamically populated using states",
-      "Data is pushed into/pulled from MongoDB using both GET and POST routes and Mongoose ORM",
+      "Data is pushed into/pulled from MongoDB using both GET and POST routes",
     ],
     demo: "../assets/gifs/engauge_demo.gif",
     background:
