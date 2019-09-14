@@ -15,7 +15,7 @@ var projects = [
     ],
     demo: "../assets/gifs/heroes_united_demo.gif",
     background:
-      "This was the first collaborative effort with some amazing teammates from my bootcamp, <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. We all thought it would be cool to create a game with a combat system for our first big project incorporating backend data storage and came up with Heroes. Some of us had played Fire Emblem and took inspiration from RPG games to come up with this game that was meant to enable the player to customize their character to some degree and also save their game progression.",
+      "This was the first collaborative effort with some amazing teammates from my bootcamp, <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. We all thought it would be exciting to create an application users could interact with for our first big project. Our goal was to create a game where the user could customize their character, fight bad guys, potentially lose, and try again using either a different character or redistribute their custom points.",
     description:
       "Heroes is a collaborative multi-level, turn-based browser game that incorporates strategy and RPG elements. User authentication is used to access saved character statistics/game progression, jQuery for gameplay and a MySQL database for data storage. My role involved designing the game play, coding the combat system, and working with the front-end developers to tie in the game mechanics with the UI.",
     link: "https://heroesunited.herokuapp.com",
@@ -42,7 +42,7 @@ var projects = [
     ],
     demo: "../assets/gifs/engauge_demo.gif",
     background:
-      "This project was another collaborative effort (we heroes reunited) and my second group project with <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. Our target was to create an app with real-life application, with the core concept being an app that would have helped David in his former role as a geologist recording oil well data in the field. With his field knowledge, we created Enguage, which is targeted at small oil companies for tracking data.",
+      "This project was another collaborative effort with <a href='https://github.com/elaintran'>Elain Tran</a>, <a href='https://github.com/i-k0n/'>Mark Baker</a>, <a href='https://github.com/Dgarza0413'>David Garza</a>, and <a href='https://github.com/bmm019'>Brittany McNulty</a>. Our target was to create an app with real-life application. Engauge's core concept is to automate data collection. David's former role as a geologist required recording extensive data on oil wells in Excel sheets and on paper. With his field knowledge, we tailored Enguage to be an ideal method for consolidating and recording data for small oil companies with multiple wells.",
     description:
       "Engauge organizes data users input through forms into a Mongo database and accesses the information to dynamically create charts, maps and financial data with live data from a financial API. My role in the project involved utilizing get/post routes to dynamically populate data in tables, creating components using React.js and building search/filter functions for a better user experience and data organization.",
     link: "https://serene-meadow-56536.herokuapp.com/",
@@ -85,7 +85,7 @@ var projects = [
       ],
     demo: "../assets/gifs/clicky_game_demo.gif",
     background:
-      "Every developer creates their version of the classic clicky game when introduced to React.js. I modified the original concept by adding in a shaking feature whenever the user clicks the same image.",
+      "Every developer creates their version of the classic clicky game when introduced to React.js. I modified the original concept by adding in a shaking feature whenever the user clicks the same image and incorporating my own style to the game.",
     description:
       "Clicky Clicky 3000 is a memory game rendered using React components and state. Each time an image is clicked, states are updated to reflect whether or not the image has been clicked before.",
     link: "https://christinaqtruong.github.io/RickandMortyClickyGame/",
@@ -135,18 +135,30 @@ function displayProject() {
   //loop through projects and display their icons
   for (var i = 0; i < projects.length; i++) {
     var iconContainer = $("<a>")
-      .addClass("project-icon col")
+      .addClass("project-icon carousel-item item-" + i)
       .attr({
-        "project-title": projects[i].title,
         "data-key": i,
-        "href": "#project-section"
+        "href": "#project-section",
+        "project-title": projects[i].title
       });
+    
+    var projectIcon = $("<img class='icon img-fluid'/>").attr({
+      "src": projects[i].icon,
+      "alt": projects[i].title
+    });
 
-    var projectIcon = $("<img class='icon'>").attr("src", projects[i].icon);
+    var carouselCaption = $("<div class='carousel-caption d-none d-md-block'></div>").attr("data-key", i);
 
+    var caption = $("<h5></h5>").text(projects[i].title);
+
+    carouselCaption.append(caption);
+    
     iconContainer.append(projectIcon);
+    iconContainer.append(carouselCaption);
 
     $(".project-list").append(iconContainer);
+
+    $(".item-0").addClass("active");
   }
 
   //switch between projects
@@ -216,4 +228,12 @@ function selectProject(title, description, link, demo, background, github) {
 
 $(document).ready(function() {
   displayProject();
+
+  $(".carousel-control-prev").carousel(
+    "prev"
+  );
+
+  $(".carousel-control-next").carousel(
+    "next"
+  );
 });

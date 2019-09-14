@@ -19,15 +19,11 @@ body{
 
 .name{
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.project-list {
-  display: flex;
-  flex-wrap: row wrap;
-  align-content: center;
-  justify-content: center;
-  margin: 15px 15px;
-  margin-bottom: 25px;
+.carousel-container{
+  margin: 40px;
 }
 
 .demo-gif{
@@ -77,18 +73,8 @@ img {
   align-items: flex-start;
 }
 
-.icon{
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden
-}
-
-.icon:hover { 
-  transform: scale(1.05);
+.carousel-inner > .item > img {
+  margin: 0 auto;
 }
 
 .tags{
@@ -103,14 +89,6 @@ img {
   border-radius: 10px;
   padding: 2px;
   margin: 6px;
-}
-
-.icon:hover{
-  transform: scale(1.01);
-}
-
-.icon-wrapper{
-  position: relative;
 }
 
 .icon-description{
@@ -133,17 +111,11 @@ img {
   margin: 2px;
 }
 
-.project-list{
-  flex-wrap: nowrap;
-  flex-direction: column;
-}
-
 .icon{
-  margin-bottom:20px;
   border: solid 1px black;
 }
 
 .name{
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 }

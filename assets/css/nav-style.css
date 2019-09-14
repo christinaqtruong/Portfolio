@@ -5,10 +5,15 @@ body {
 .navbar-container{
   display: flex;
   justify-content: space-around;
+  background-color: black !important;
 }
 
 .nav-link{
   padding: 20px;
+}
+
+.navbar-link{
+  color: white !important;
 }
 
 /* 

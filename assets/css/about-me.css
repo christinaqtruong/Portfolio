@@ -34,7 +34,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 0px;
-  padding-bottom: 0px !important;
+  padding: 0px !important;
+  border: solid 4px black;
+  margin-bottom: 5px;
 }
 
 .tag-box{
