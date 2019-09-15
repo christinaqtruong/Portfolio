@@ -122,6 +122,10 @@ text-align:center;
 display:inline-block  !important;
 }
 
+.row{
+  margin: 20px;
+}
+
 @media screen and (max-width: 750px) {
 .project-tag{
   margin: 2px;
@@ -129,5 +133,6 @@ display:inline-block  !important;
 
 .name{
   margin-bottom: 20px;
+  text-align: center;
 }
 }

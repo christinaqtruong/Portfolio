@@ -134,7 +134,7 @@ function displayProject() {
 
   //loop through projects and display their icons
   for (var i = 0; i < projects.length; i++) {
-    var iconContainer = $("<a>")
+    var iconContainer = $("<div>")
       .addClass("project-icon carousel-item item-" + i)
       .attr({
         "data-key": i,
