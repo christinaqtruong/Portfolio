@@ -126,6 +126,14 @@ display:inline-block  !important;
   margin: 20px;
 }
 
+.carousel-control-prev-icon{
+  background-image: url(../images/left-carousel-button.svg);
+}
+
+.carousel-control-next-icon{
+  background-image: url(../images/right-carousel-button.svg);
+}
+
 @media screen and (max-width: 750px) {
 .project-tag{
   margin: 2px;
@@ -135,4 +143,5 @@ display:inline-block  !important;
   margin-bottom: 20px;
   text-align: center;
 }
+
 }
