@@ -134,6 +134,14 @@ display:inline-block  !important;
   background-image: url(../images/right-carousel-button.svg);
 }
 
+.carousel-instructions{
+  margin: 0px;
+}
+
+.details{
+  margin-top: 0px;
+}
+
 @media screen and (max-width: 750px) {
 .project-tag{
   margin: 2px;

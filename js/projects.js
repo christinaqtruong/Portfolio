@@ -149,9 +149,9 @@ function displayProject() {
 
     var carouselCaption = $("<div class='carousel-caption d-none d-md-block'></div>").attr("data-key", i);
 
-    var caption = $("<h5></h5>").text(projects[i].title);
+    // var caption = $("<h5 class='project-name'></h5>").text(projects[i].title);
 
-    carouselCaption.append(caption);
+    // carouselCaption.append(caption);
     
     iconContainer.append(projectIcon);
     iconContainer.append(carouselCaption);
