@@ -92,6 +92,26 @@ var projects = [
     tags: ["React.js", "JavaScript", "CSS"],
     icon: "../assets/images/Clicky_Game.png",
     github: "https://github.com/christinaqtruong/RickandMortyClickyGame"
+  },
+  {
+    title: "Go Giphy",
+    dev: 
+      [
+      "User input is grabbed from a form to dynamically create a search button using jQuery and JavaScript",
+      "On click, the search button sends a request to Giphy's API for gifs using the button's text as the search keyword",
+      "Gif stills are populated on the page and animate on click",
+      "Clicking a gif changes its default data-state from 'still' to 'animated' and changes its image 'src' to an animated gif",
+      "Clicking on a new search button empties the gif container and populates the new gif results",
+      ],
+    demo: "../assets/gifs/go_giphy_demo.gif",
+    background:
+      "I created this project to review basic button manipulation, AJAX calls and jQuery methods.",
+    description:
+      "Go Giphy sends requests to a server-side API using the jQuery AJAX method. The request is made to Giphy's API and populates gif information using search keyword buttons created dynamically using jQuery and JavaScript.",
+    link: "https://christinaqtruong.github.io/goGiphy/",
+    tags: ["Bootstrap", "JavaScript", "jQuery", "AJAX", "API"],
+    icon: "../assets/images/go_giphy.png",
+    github: "https://github.com/christinaqtruong/goGiphy"
   }
 ];
 
