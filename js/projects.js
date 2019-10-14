@@ -110,7 +110,7 @@ var projects = [
       "Go Giphy sends requests to a server-side API using the jQuery AJAX method. The request is made to Giphy's API and populates gif information using search keyword buttons created dynamically using jQuery and JavaScript.",
     link: "https://christinaqtruong.github.io/goGiphy/",
     tags: ["Bootstrap", "JavaScript", "jQuery", "AJAX", "API"],
-    icon: "../assets/images/go_giphy.png",
+    icon: "../assets/images/Go_Giphy.png",
     github: "https://github.com/christinaqtruong/goGiphy"
   }
 ];
