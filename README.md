@@ -59,33 +59,8 @@ The *repository_URL* is the link you would use to clone down your github reposit
 
 ## Deployment
 
-To deploy the application to github pages, use:
-````
-npm install gh-pages --save-dev
-````
+To deploy the application to github pages, navigate to the **Settings** page of the repository and set the "Source" to *gh-pages*.
 
-In the package.json file, add the following code to the first object:
-````
-"homepage": "http://github_username.github.io/repo_name"
-````
-Be sure to replace *github_username* with your github username and *repo_name* with the name of your repository.
-
-Then inside the package.json file, add the following two scripts to the "scripts" object:
-````
-"predeploy": "npm run build",
-
-"deploy" : "gh-pages -d build",
-````
-  
-After those lines are saved and pushed to master, run:
-
-````
-npm run deploy
-````
-Once the application is deployed, navigate to your github repository Settings > Github Pages and change the **Source** to *gh-pages*.
-
-  
-  
 
 ## Authors
 
