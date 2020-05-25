@@ -59,18 +59,9 @@ The *repository_URL* is the link you would use to clone down your github reposit
 
 ## Deployment
 
-  
-
-To run the application on your local server, use:
-
-  
-````
-yarn start
-````
-
 To deploy the application to github pages, use:
 ````
-yarn add gh-pages --save-dev
+npm install gh-pages --save-dev
 ````
 
 In the package.json file, add the following code to the first object:
@@ -81,7 +72,7 @@ Be sure to replace *github_username* with your github username and *repo_name* w
 
 Then inside the package.json file, add the following two scripts to the "scripts" object:
 ````
-"predeploy": "yarn run build",
+"predeploy": "npm run build",
 
 "deploy" : "gh-pages -d build",
 ````
