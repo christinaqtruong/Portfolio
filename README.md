@@ -5,7 +5,7 @@
 
   
 
-A website designed from scratch using vanilla html, [flaticon](flaticon.com), [bootstrap](getbootstrap.com) and [sass]([sass-lang.com]) to showcase the first projects I created as a developer back in 2019 as part of the University of Texas at Austin's Coding Boot Camp summer cohort. The deployed version can be found at [here](https://christinaqtruong.github.io/](https://christinaqtruong.github.io/).
+A website designed from scratch using vanilla html, [flaticon](flaticon.com), [bootstrap](getbootstrap.com) and [sass]([sass-lang.com]) to showcase the first projects I created as a developer back in 2019 as part of the University of Texas at Austin's Coding Boot Camp summer cohort. The deployed version can be found at [here]([https://christinaqtruong.github.io/](https://christinaqtruong.github.io/)).
 
   
 
